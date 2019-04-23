@@ -1,4 +1,144 @@
-
-#carouselExampleControls{
-    height: 50vh;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li.nav-item {
+
+}
+
+nav {
+  
+  background-color: #fff;
+
+}
+
+a.nav-link {
+ 
+  
+}
+.nav-link {
+  
+}
+
+.navbar-toggler {
+  margin: 20px;
+  
+}
+
+a.dropdown-item {
+ 
+}
+
+a.dropdown-item:hover {
+ 
+}
+
+
+li.nav-item.active {
+  padding-left: 0;
+}
+
+.velikoSlovo {
+  text-transform: capitalize;
+}
+ 
+div.col-sm-12.col-md-6.col-lg-6.boja {
+  text-align: center; 
+  margin-top: 1px;
+  background-color: #416FAB;
+
+ 
+ 
+}
+
+.srce {
+  color: white;
+  padding: 5px;
+} 
+
+.srce:hover {
+  color: red;
+  transition: 1000ms;
+  cursor: pointer;
+}
+
+h3 {
+  color: white;
+  cursor: pointer;
+}
+
+div.col-sm-12.col-md-6.col-lg-6
+ {
+  margin-top: 20px;
+}
+ul.informacije{
+  list-style: none;
+  margin: 10px 0 0 10px;
+  
+}
+
+footer.container-fluid {
+  background-color: #d9dce0;
+  padding: 0;
+}
+
+form.vesti {
+  margin: 10px 0 0 10px;
+}
+
+ul.informacije li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+#logo2 {
+  margin: 10px 0 0 10px;
+
+}
+
+img#logo2.img-fluid {
+  width: 300px;
+}
+
+.ned {
+  background-color: lightgreen;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.pon-sub {
+  color: #fff;
+
+}
+
+div.col-sm-12.col-md-4.col-lg-4 {
+  padding-right: 0;
+}
+
+
+
+.masthead {
+  height: 100vh;
+  width: 100vw;
+  min-height: 500px;
+  background-image: url('Assets/img/proba.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+  
+
+
