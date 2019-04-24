@@ -11,183 +11,272 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
   <link rel="stylesheet" href="Assets/bootstrap-4/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <!--  jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+  <!-- Bootstrap Date-Picker Plugin -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 </head>
 
 
 
 <body onload="postaviTrenutnogKorisnika()">
+  <div class="container">
+    <div class="row">
 
+      <nav class="navbar navbar-expand-sm navbar-light  shadow fixed-top">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
+        <div class="container">
 
-  <nav class="navbar navbar-expand-sm navbar-light  shadow fixed-top">
-    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
-    <div class="container">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Početna
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Zakazivanje</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Usluge
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#srednji">Estetska hirurgija</a>
-              <a class="dropdown-item" href="#">Oralna hirurgija</a>
-              <a class="dropdown-item" href="#">Snimanje zuba</a>
-              <a class="dropdown-item" href="#">Prostetika</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="logIn.html">Prijavi se</a>
-          </li>
-          <li>
-
-
-            <a id="trenutniKorisnik" href="korisnici.html"></a>
-
-
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Full Page Image Header with Vertically Centered Content -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-            Zakazite svoj pregled
+          <button class="navbar-toggler align-items-center" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-          <p class="lead">A great starter layout for a landing page</p> -->
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Zakazite svoj pregled</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Početna
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Zakazivanje</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Usluge
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#srednji">Estetska hirurgija</a>
+                  <a class="dropdown-item" href="#">Oralna hirurgija</a>
+                  <a class="dropdown-item" href="#">Snimanje zuba</a>
+                  <a class="dropdown-item" href="#">Prostetika</a>
                 </div>
-                <div class="modal-body">
-                  <form action="https://formspree.io/alek.ilic13@gmail.com" method="POST">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="logIn.html">Prijavi se</a>
+              </li>
+              <li>
 
-                    <div class="form-row">
-                      <div class="col">
-                        <input type="text" name="ime" required id="ime" class="form-control" placeholder="Ime">
-                      </div>
-                      <div class="col">
-                        <input type="text" name="prezime" class="form-control" placeholder="Prezime" required
-                          id="prezime">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col">
-                        <input type="email" name="_replyto" class="form-control" required
-                          placeholder="Unesite email adresu" id="email">
-                      </div>
-                      <div class="col">
-                        <input type="tel" name="mobilni" class="form-control" id="mob"
-                          placeholder="Unesite broj mobilnog telefona" required>
-                      </div>
-                    </div>
 
-                    <select class="custom-select">
-                      <option selected>izaberite</option>
-                      <option name="Snimanje zuba" value="1">Snimanje zuba</option>
-                      <option name="Proteze" value="2">Proteze</option>
-                      <option name="Estetska hirurgija" value="3">Estetska hirurgija</option>
-                    </select>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="form-group">
-                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                              <input type="text" class="form-control datetimepicker-input" name="datum"
-                                data-target="#datetimepicker1" />
-                              <div class="input-group-append" data-target="#datetimepicker1"
-                                data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                              </div>
-                            </div>
+                <a id="trenutniKorisnik" href="korisnici.html"></a>
+
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Masthead -->
+  <div class="container">
+    <div class="row">
+      <div class="masthead">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+              <button type="button" class="btn  zakazivanjebtn" data-toggle="modal" data-target="#exampleModalLong">
+                Zakazite svoj pregled
+              </button>
+              <!-- <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+          <p class="lead">A great starter layout for a landing page</p> -->
+              <!-- Modal -->
+              <div class="modal fade " id="exampleModalLong" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Zakazite svoj pregled</h5>
+                      <button type="button " class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="https://formspree.io/alek.ilic13@gmail.com" method="POST">
+
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" name="ime" required id="ime" class="form-control" placeholder="Ime">
+                          </div>
+                          <div class="col">
+                            <input type="text" name="prezime" class="form-control" placeholder="Prezime" required
+                              id="prezime">
                           </div>
                         </div>
-                        <script type="text/javascript">
-                          $(function () {
-                            $('#datetimepicker1').datetimepicker();
-                          });
-                        </script>
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="email" name="_replyto" class="form-control" required
+                              placeholder="Unesite email adresu" id="email">
+                          </div>
+                          <div class="col">
+                            <input type="tel" name="mobilni" class="form-control" id="mob"
+                              placeholder="Unesite broj mobilnog " required>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col">
+                            <select class="custom-select form-control">
+                              <option selected>izaberite</option>
+                              <option name="Snimanje zuba" value="1">Snimanje zuba</option>
+                              <option name="Proteze" value="2">Proteze</option>
+                              <option name="Estetska hirurgija" value="3">Estetska hirurgija</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col">
+
+                        <input class="btn  btn-primary" type="submit" value="Posalji">
+                        <input class="btn  btn-primary" type="reset" value="Obriši">
                       </div>
                     </div>
-                    <input type="submit" value="Posalji">
-                    <input type="reset" value="Obriši">
-                  </form>
+                      </form>
 
 
 
 
 
+                    </div>
+
+                  </div>
                 </div>
-
               </div>
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
 
- <div class="col">
-     <div class="card-group">
-    <div class="card">
-      <img class="card-img-top" src="Assets/img/osmeh.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Estetska Hirurgija</h5>
-        <p class="card-text">Preskupo ali vredi</p>
-        <p class="card-text"><small class="text-muted">Nemam vise dva bubrega</small></p>
+
+  <!-- Kartice -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="Assets/img/osmeh1.jpg" alt="osmeh1.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Estetska Hirurgija</h5>
+              <p class="card-text">Preskupo ali vredi</p>
+              <p class="card-text"><small class="text-muted">Nemam vise dva bubrega</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="Assets/img/osmeh3.jpg" alt="osmeh3.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Prostetika</h5>
+              <p class="card-text">Ovde ide nesto</p>
+              <p class="card-text"><small class="text-muted">Hiljade zadovoljnih klijenata</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="Assets/img/osmeh3.jpg" alt="osmeh3.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Snimanje</h5>
+              <p class="card-text">Najbolje tehnologije</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+
+
+        </div>
+
       </div>
     </div>
-    <div class="card">
-      <img class="card-img-top" src="Assets/img/osmeh.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Prostetika</h5>
-        <p class="card-text">Ovde ide nesto</p>
-        <p class="card-text"><small class="text-muted">Hiljade zadovoljnih klijenata</small></p>
+  </div>
+
+  <footer class="page-footer font-small  pt-3">
+
+
+    <div class="container-fluid text-center text-md-left">
+
+
+      <div class="row">
+
+        <div class="col-md-6 mt-md-0 mt-3">
+
+
+
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Kontakt</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!"><i class="fa fa-github"> Github </i></a>
+            </li>
+            <li>
+              <a href="#!"><i class="fab fa-facebook-f"> Facebook</i></a>
+            </li>
+            <li>
+              <a href="#!"><i class="fab fa-instagram"> Instagram</i></a>
+            </li>
+            <li>
+              <a href="#!"><i class="fab fa-facebook-messenger"> posaljite nam poruku</i></a>
+            </li>
+          </ul>
+
+        </div>
+
+
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Radno vreme</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              radimo ceo dan
+            </li>
+            <li>
+              radimo ceo dan
+            </li>
+            <li>
+              radimo ceo dan
+            </li>
+
+          </ul>
+
+        </div>
+
+
       </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="Assets/img/osmeh.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Snimanje</h5>
-        <p class="card-text">Najbolje tehnologije</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+
+
+
+      <div class="footer-copyright text-center py-3">© By BEKA
+
       </div>
-    </div>
-  
 
 
-    </div>
-
- </div>
-    
-      
+  </footer>
 
 
 
@@ -203,12 +292,7 @@
 
 
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
 
   <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
   <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
