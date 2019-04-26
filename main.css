@@ -8,7 +8,7 @@ body {
 }
 
 li.nav-item {
-
+  color: #79CFE4;
 }
 
 nav {
@@ -17,55 +17,16 @@ nav {
 
 }
 
-a.nav-link {
- 
-  
-}
-.nav-link {
-  
-}
 
 .navbar-toggler {
   margin: 20px;
   
 }
 
-a.dropdown-item {
- 
-}
-
-a.dropdown-item:hover {
- 
-}
-
-
-li.nav-item.active {
-  padding-left: 0;
-}
-
 .velikoSlovo {
   text-transform: capitalize;
 }
  
-div.col-sm-12.col-md-6.col-lg-6.boja {
-  text-align: center; 
-  margin-top: 1px;
-  background-color: #416FAB;
-
- 
- 
-}
-
-.srce {
-  color: white;
-  padding: 5px;
-} 
-
-.srce:hover {
-  color: red;
-  transition: 1000ms;
-  cursor: pointer;
-}
 
 h3 {
   color: white;
@@ -105,15 +66,8 @@ img#logo2.img-fluid {
   width: 300px;
 }
 
-.ned {
-  background-color: lightgreen;
-  color: #fff;
-  border-radius: 5px;
-  padding: 5px;
-}
 
-.pon-sub {
-  color: #fff;
+
 
 }
 
@@ -138,14 +92,20 @@ div.col-sm-12.col-md-4.col-lg-4 {
 .col{
   margin-top: 15px;
 }
-.zakazivanjebtn{
-  background-color: transparent;
-border-color: #ccc;
-
-}
 .zakazivanjebtn:hover{
   background-color: #fff;
-  color: blue;
+  color:#79CFE4;
+border-color: #ccc; 
+
+font-size: 35px;
+transition: 2s;
+font-weight:bold;
+
+}
+.zakazivanjebtn{
+  background-color: #fff;
+  color:#245497;
+  padding: 20px;
 }
 .form-control{
  
@@ -153,7 +113,44 @@ border-color: #ccc;
 
 
 }
+.dropdown-menu{
+  border-radius: 10px;
 
+}
+.dropdown-item{
+  color: #245497;
+}
+.dropdown-item:hover{
+  background-color:#79CFE4;
+  color: white;
+}
+.nav-link{
+  color: #79CFE4 !important;
+  font-size: 20px;
+  padding: 15px;
+  margin: 15px;
+}
+.nav-link:hover{
+  color:white !important;
+  background-color:  #79CFE4;
+  transition: 1.5s;
+  border-radius: 10px;
+
+}    
+.prvi {
+  display: none;
+}    
+.drugi{
+  display: none;
+}           
+
+.treci {
+  display: none;
+}           
+.logovanje{
+  margin: 30px;
+  
+}
 
 
 

@@ -57,19 +57,18 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#srednji">Estetska hirurgija</a>
                   <a class="dropdown-item" href="#">Oralna hirurgija</a>
                   <a class="dropdown-item" href="#">Snimanje zuba</a>
-                  <a class="dropdown-item" href="#">Prostetika</a>
+                  <a class="dropdown-item" href="#">Protetika</a>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" id="prijaviSe">
                 <a class="nav-link" href="logIn.html">Prijavi se</a>
               </li>
-              <li>
+              <li class="nav-item">
 
 
-                <a id="trenutniKorisnik" href="korisnici.html"></a>
+                <a class="nav-link" id="trenutniKorisnik" href="korisnici.html"></a>
 
 
               </li>
@@ -127,20 +126,20 @@
                         <div class="form-row">
                           <div class="col">
                             <select class="custom-select form-control">
-                              <option selected>izaberite</option>
+                              <option selected>Izaberite</option>
                               <option name="Snimanje zuba" value="1">Snimanje zuba</option>
-                              <option name="Proteze" value="2">Proteze</option>
-                              <option name="Estetska hirurgija" value="3">Estetska hirurgija</option>
+                              <option name="Proteze" value="2">Protetika</option>
+                              <option name="Estetska hirurgija" value="3">Oralna hirurgija</option>
                             </select>
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="col">
 
-                        <input class="btn  btn-primary" type="submit" value="Posalji">
-                        <input class="btn  btn-primary" type="reset" value="Obriši">
-                      </div>
-                    </div>
+                            <input class="btn  btn-primary" type="submit" value="Posalji">
+                            <input class="btn  btn-primary" type="reset" value="Obriši">
+                          </div>
+                        </div>
                       </form>
 
 
@@ -171,25 +170,28 @@
           <div class="card">
             <img class="card-img-top" src="Assets/img/osmeh1.jpg" alt="osmeh1.jpg">
             <div class="card-body">
-              <h5 class="card-title">Estetska Hirurgija</h5>
+              <h5 class="card-title">Oralna hirurgija</h5>
               <p class="card-text">Preskupo ali vredi</p>
-              <p class="card-text"><small class="text-muted">Nemam vise dva bubrega</small></p>
+              <button id="prvi"><a href="#prvit"> Opsirnije</a></button>
+              <!-- <p class="card-text"><small class="text-muted">Nemam vise dva bubrega</small></p> -->
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="Assets/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
-              <h5 class="card-title">Prostetika</h5>
+              <h5 class="card-title">Protetika</h5>
               <p class="card-text">Ovde ide nesto</p>
-              <p class="card-text"><small class="text-muted">Hiljade zadovoljnih klijenata</small></p>
+              <button id="drugi"><a href="#drugit"> Opsirnije</a></button>
+              <!-- <p class="card-text"><small class="text-muted">Hiljade zadovoljnih klijenata</small></p> -->
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="Assets/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
-              <h5 class="card-title">Snimanje</h5>
+              <h5 class="card-title">Snimanje zuba</h5>
               <p class="card-text">Najbolje tehnologije</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button id="treci"><a href="#trecit"> Opsirnije</a></button>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
             </div>
           </div>
 
@@ -200,6 +202,185 @@
       </div>
     </div>
   </div>
+  <div class="container prvi" id="prvit">
+    <div class="row">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Hirurško vađenje umnjaka
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+
+              Bol u umnjaku ume da se proširi i do uva i veoma je neprijatan. Zbog toga kao rešenje problema, loše
+              sraslih umnjaka, preporučujemo operaciju. Nijedna operacija nije prijatna, ali možemo da vas ohrabrimo jer
+              ćete posle imati mnogo veliko olakšanje.
+              Tačno vreme trajanja same intervencije se nikada ne može znati, ali sama procedura je bezbolna jer se radi
+              uz obaveznu anesteziju.
+
+              Uglavnom, potrebno je da zakažete i napravite digitalni ortopan snimak ( snimak cele gornje i donje
+              vilice). Posle kliničkog pregleda, objasnićemo vam celu proceduru i imaćete mogućnost da postavite pitanja
+              o svemu što vas interesuje. </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Resekcija korena zuba
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              U prvoj fazi se pravi rez. Postoje različite metode ove operacije, tako će i lokalizacija ovog reza
+              zavisiti od metode. Kada se načini rez, podigne se sluzokoža i površinski deo kosti, postepeno se uklanja
+              kost, da bi se omogućio pristup vrhu korena i procesu na njemu, zatim se uklanja proces. Ostaci
+              inficiranog tkiva bi doveli do recidiva. Nakon toga se radi skraćivanje korena zuba. Zatim se vrši
+              punjenje kanala. Time se obavlja hermetičko zatvaranje. Punjenje se najčešće vrši kroz krunu zuba, u nekim
+              slučajevima, to se mora učiniti preko vrha skraćenog korena zuba. Posle obavljanja svih potrebnih
+              postupaka pristupa se inspekciji i vraćanju režnja na svoje mesto i njegovo ušivanje.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Ciste i cistektomija
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Ciste se mogu podeliti po različitim karakteristikama, a vrlo česta klasifikacija je na akutne ciste na
+              zubu i hronične zubne ciste.
+              Ukoliko uočimo početnu fazu i simptome, reč je obično o akutnoj cisti. Ako je stanje takvo, mogu se
+              razviti i hronične ciste čiji su simptomi mnogo suptilniji i teže se primećuju. One se, logično, veoma
+              teško leče.
+              Ciste se mogu razlikovai i po tome što postoje inflamatorne ciste i razvojne ciste.
+              Bakterije često uzrokuju pravljenje gingivalnih cista kod beba, a postoje još erupcione, folikularne i
+              gingivalne ciste kod odraslih. Sve su to razvojne ciste.
+              Stariji ljudi neretko imaju problema sa takozvanim folikularnim cistama.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container drugi" id="drugit">
+    <div class="row">
+      <div class="accordion" id="accordionExample2">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne1"
+                aria-expanded="true" aria-controls="collapseOne">
+                Fasete (Viniri)
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne1" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample2">
+            <div class="card-body">
+              Najvrednije zubne nadoknade koje trenutno postoje,u biološkom i estetskom smislu,su keramičke fasete ili
+              viniri. Indikovani su obično za izradu gornjih prednjih zuba.Postavljaju se samo na spoljašnju stranu
+              zuba. Ovo su biološki vredne nadoknade jer je priprema zuba minimalna.
+
+              Naime skida se samo 0,3 do 0,5 mm zubne supstance s prednje strane zuba(za metalokeramiku se skida 1,5
+              do2.0 mm sa svih strana zuba). Koriste se za korekciju boje i oblika, a redje nepravilnosti položaja
+              zuba.Materijal koji se koristi,je top kvaliteta,u smislu trajnosti, biokompatibilnosti i prirodnosti.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Bezmetalne krunice
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+            <div class="card-body">
+              Krunica je zamena za zub koji je toliko oštećen da nijedan oblik konzervativnog lečenja ne može da ga
+              spase. Takav zub ili nema živac ili je njegov krunični deo polomljen ili razoren karijesom. Ako je koren
+              zdrav, uz adekvatnu pripremu, on može da se sačuva a zub nadoknadi krunom.
+
+              Brušenje zuba je minimalno (0,7 mm)
+              Nema osetljivosti zuba na termičke nadražaje
+              Rub krunice je tanak, pa ne iritira gingivu
+              Bezmetalne krunice izgledaju kao prirodni zubi
+              Krunice su veoma otporne na silu žvakanja
+              Dokazano su bezbedne po zdravlje
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Metalokeramički mostovi
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample2">
+            <div class="card-body">
+              Izradjuju se kod nedostatka jednog ili više zuba, kad raspored preostalih zuba omogućava da se na njih
+              putem kruna naslone zubi koji nedostaju.
+              Preostali zubi se bruse, prvo se radi metalna konstrukcija na koju se kasnije slaže i peče keramika. Rad
+              se trajno cementira – ne skida se. Po komforu i profilaktičkim svojstvima, a u slučaju dobro postavljene
+              indikacije rad je trajan i sprečava dalje propadanje oralnih tkiva.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container treci" id="trecit">
+    <div class="row">
+      <div class="accordion" id="accordionExample3">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne1"
+                aria-expanded="true" aria-controls="collapseOne">
+                Rendgen uređaji i snimanje zuba
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne1" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample3">
+            <div class="card-body">
+              Naša dijagnostička oprema za snimanje zuba garantuje odličan kvalitet slike dok je izlaganje pacijenta
+              zračenju nisko. Nudimo niz sistema koji pokrivaju sve moguće stomatološke indikacije. Kombinaciju sistema
+              za digitalna panoramska i 3D snimanja čine Morita Veravievepocs 2D i Morita Veravievepocs 3D R100 koji
+              obezbeđuje najbolji kvalitet slike.
+              Pored digitalnih uređaja, Morita program takođe uključuje i intraoralni sistem za snimanje Veraview iX.
+              Svi se snimci obrađuju u naprednom softveru i-Dixel, dok se uz svaki 3D snimak isporučuje besplatni
+              softver One Data Viewer.
+
+              Kompletiran na ovaj način, Morita Dentalni Rendgen Centar u Beogradu je danas prvi i jedini referentni
+              centar u Srbiji, lidera u dentalnoj radiologiji J.Morita iz Japana. </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+
+
 
   <footer class="page-footer font-small  pt-3">
 
@@ -299,7 +480,7 @@
 
   <script src="korisnici.js"></script>
   <script src="main.js"></script>
-  <script src="pacijenti.js"></script>
+  <script src="admin.js"></script>
 </body>
 
 </html>

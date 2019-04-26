@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="Assets/img/zub.png" type="image/png" />
+  <title>Dental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="Assets/bootstrap-4/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body onload="prikaziKorisnika()">
+
+
+    
+    
+          <nav class="navbar navbar-expand-sm navbar-light  shadow ">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
+            <div class="container">
+    
+              <button class="navbar-toggler align-items-center" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Početna
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Zakazivanje</a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Usluge
+                    </a>
+    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#srednji">Estetska hirurgija</a>
+                      <a class="dropdown-item" href="#">Oralna hirurgija</a>
+                      <a class="dropdown-item" href="#">Snimanje zuba</a>
+                      <a class="dropdown-item" href="#">Prostetika</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="trenutniKorisnik" href="#"></a>
+                  
+                        </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     
+ 
+<div class="container">
+  <div class="row">
+    <div id="doktori" class="row">
+
+    </div>
+      <form action="index.html" >
+        
+          <input type="submit" value="Logout" onclick="logOut()" >
+          
+      </form>
+  </div>
+</div>
+
+  <footer class="page-footer font-small  pt-3">
+
+
+      <div class="container-fluid text-center text-md-left">
+  
+  
+        <div class="row">
+  
+          <div class="col-md-6 mt-md-0 mt-3">
+  
+  
+  
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <hr class="clearfix w-100 d-md-none pb-3">
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Kontakt</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!"><i class="fa fa-github"> Github </i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fab fa-facebook-f"> Facebook</i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fab fa-instagram"> Instagram</i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fab fa-facebook-messenger"> posaljite nam poruku</i></a>
+              </li>
+            </ul>
+  
+          </div>
+  
+  
+  
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Radno vreme</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                radimo ceo dan
+              </li>
+              <li>
+                radimo ceo dan
+              </li>
+              <li>
+                radimo ceo dan
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+  
+        </div>
+  
+  
+  
+  
+        <div class="footer-copyright text-center py-3">© By BEKA
+  
+        </div>
+  
+  
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
+  <script src="admin.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+
+</html>
