@@ -139,17 +139,23 @@ font-weight:bold;
 }    
 .prvi {
   display: none;
+ 
 }    
 .drugi{
   display: none;
+ 
 }           
 
 .treci {
   display: none;
+
 }           
 .logovanje{
   margin: 30px;
   
+}
+.sadrzaj{
+  margin: 20px 0 20px 0 ;
 }
 
 

@@ -4,24 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="Assets/img/zub.png" type="image/png" />
+  <link rel="shortcut icon" href="css/img/zub.png" type="image/png" />
   <title>Dental</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="Assets/bootstrap-4/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <!--  jQuery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-4/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
-  <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-
-  <!-- Bootstrap Date-Picker Plugin -->
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 </head>
 
 
@@ -31,7 +21,7 @@
     <div class="row">
 
       <nav class="navbar navbar-expand-sm navbar-light  shadow fixed-top">
-        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
         <div class="container">
 
           <button class="navbar-toggler align-items-center" type="button" data-toggle="collapse"
@@ -168,28 +158,28 @@
       <div class="col">
         <div class="card-deck">
           <div class="card">
-            <img class="card-img-top" src="Assets/img/osmeh1.jpg" alt="osmeh1.jpg">
+            <img class="card-img-top" src="css/img/osmeh1.jpg" alt="osmeh1.jpg">
             <div class="card-body">
               <h5 class="card-title">Oralna hirurgija</h5>
-              <p class="card-text">Preskupo ali vredi</p>
-              <button id="prvi"><a href="#prvit"> Opsirnije</a></button>
+              <!-- <p class="card-text">Preskupo ali vredi</p> -->
+              <button id="prvi"><a href="#card1"> Opsirnije</a></button>
               <!-- <p class="card-text"><small class="text-muted">Nemam vise dva bubrega</small></p> -->
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="Assets/img/osmeh3.jpg" alt="osmeh3.jpg">
+            <img class="card-img-top" src="css/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Protetika</h5>
-              <p class="card-text">Ovde ide nesto</p>
+              <!-- <p class="card-text">Ovde ide nesto</p> -->
               <button id="drugi"><a href="#drugit"> Opsirnije</a></button>
               <!-- <p class="card-text"><small class="text-muted">Hiljade zadovoljnih klijenata</small></p> -->
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="Assets/img/osmeh3.jpg" alt="osmeh3.jpg">
+            <img class="card-img-top" src="css/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Snimanje zuba</h5>
-              <p class="card-text">Najbolje tehnologije</p>
+              <!-- <p class="card-text">Najbolje tehnologije</p> -->
               <button id="treci"><a href="#trecit"> Opsirnije</a></button>
               <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
             </div>
@@ -202,10 +192,10 @@
       </div>
     </div>
   </div>
-  <div class="container prvi" id="prvit">
-    <div class="row">
+  <div class="container prvi" >
+    <div class="row sadrzaj" id="prvit" >
       <div class="accordion" id="accordionExample">
-        <div class="card">
+        <div class="card" id="card1">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
@@ -276,8 +266,8 @@
       </div>
     </div>
   </div>
-  <div class="container drugi" id="drugit">
-    <div class="row">
+  <div class="container drugi" >
+    <div class="row sadrzaj" id="drugit">
       <div class="accordion" id="accordionExample2">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -348,8 +338,8 @@
     </div>
   </div>
 
-  <div class="container treci" id="trecit">
-    <div class="row">
+  <div class="container treci" >
+    <div class="row sadrzaj" id="trecit">
       <div class="accordion" id="accordionExample3">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -394,7 +384,7 @@
 
 
 
-          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo-2.png" alt="logo"></a>
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
 
         </div>
         <!-- Grid column -->
@@ -475,12 +465,12 @@
 
 
 
-  <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
-  <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
+  <script src="js/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="js/bootstrap-4/js/bootstrap.min.js"></script>
 
-  <script src="korisnici.js"></script>
-  <script src="main.js"></script>
-  <script src="admin.js"></script>
+  <script src="js/korisnici.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 
 </html>
