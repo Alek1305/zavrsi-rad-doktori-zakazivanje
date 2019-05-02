@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="css/bootstrap-4/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="js/bootstrap-4/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
 </head>
@@ -17,57 +17,47 @@
 
 
 <body onload="postaviTrenutnogKorisnika()">
-  <div class="container">
-    <div class="row">
-
-      <nav class="navbar navbar-expand-sm navbar-light  shadow fixed-top">
-        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
-        <div class="container">
-
-          <button class="navbar-toggler align-items-center" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Početna
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Zakazivanje</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Usluge
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Oralna hirurgija</a>
-                  <a class="dropdown-item" href="#">Snimanje zuba</a>
-                  <a class="dropdown-item" href="#">Protetika</a>
-                </div>
-              </li>
-              <li class="nav-item" id="prijaviSe">
-                <a class="nav-link" href="logIn.html">Prijavi se</a>
-              </li>
-              <li class="nav-item">
-
-
-                <a class="nav-link" id="trenutniKorisnik" href="korisnici.html"></a>
-
-
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-sm navbar-light  shadow  fixed-top ">
+    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
+    <div class="container">
+      <button class="navbar-toggler align-items-center" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Početna
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="zakazivanje.html">Zakazivanje</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Usluge
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Oralna hirurgija</a>
+              <a class="dropdown-item" href="#">Snimanje zuba</a>
+              <a class="dropdown-item" href="#">Protetika</a>
+            </div>
+          </li>
+          <li class="nav-item" id="prijaviSe">
+            <a class="nav-link" href="logIn.html">Prijavi se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="trenutniKorisnik" href="korisnici.html"></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
+
   <!-- Masthead -->
   <div class="container">
     <div class="row">
@@ -78,9 +68,6 @@
               <button type="button" class="btn  zakazivanjebtn" data-toggle="modal" data-target="#exampleModalLong">
                 Zakazite svoj pregled
               </button>
-              <!-- <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-          <p class="lead">A great starter layout for a landing page</p> -->
-              <!-- Modal -->
               <div class="modal fade " id="exampleModalLong" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -93,7 +80,6 @@
                     </div>
                     <div class="modal-body">
                       <form action="https://formspree.io/alek.ilic13@gmail.com" method="POST">
-
                         <div class="form-row">
                           <div class="col">
                             <input type="text" name="ime" required id="ime" class="form-control" placeholder="Ime">
@@ -125,24 +111,15 @@
                         </div>
                         <div class="form-row">
                           <div class="col">
-
                             <input class="btn  btn-primary" type="submit" value="Posalji">
                             <input class="btn  btn-primary" type="reset" value="Obriši">
                           </div>
                         </div>
                       </form>
-
-
-
-
-
                     </div>
-
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -151,7 +128,7 @@
   </div>
 
 
-  <!-- Kartice -->
+  <!-- Cards -->
 
   <div class="container">
     <div class="row">
@@ -161,39 +138,30 @@
             <img class="card-img-top" src="css/img/osmeh1.jpg" alt="osmeh1.jpg">
             <div class="card-body">
               <h5 class="card-title">Oralna hirurgija</h5>
-              <!-- <p class="card-text">Preskupo ali vredi</p> -->
               <button id="prvi"><a href="#card1"> Opsirnije</a></button>
-              <!-- <p class="card-text"><small class="text-muted">Nemam vise dva bubrega</small></p> -->
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="css/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Protetika</h5>
-              <!-- <p class="card-text">Ovde ide nesto</p> -->
               <button id="drugi"><a href="#drugit"> Opsirnije</a></button>
-              <!-- <p class="card-text"><small class="text-muted">Hiljade zadovoljnih klijenata</small></p> -->
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="css/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Snimanje zuba</h5>
-              <!-- <p class="card-text">Najbolje tehnologije</p> -->
               <button id="treci"><a href="#trecit"> Opsirnije</a></button>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
             </div>
           </div>
-
-
-
         </div>
-
       </div>
     </div>
   </div>
-  <div class="container prvi" >
-    <div class="row sadrzaj" id="prvit" >
+  <!-- Content of cards -->
+  <div class="container prvi">
+    <div class="row sadrzaj" id="prvit">
       <div class="accordion" id="accordionExample">
         <div class="card" id="card1">
           <div class="card-header" id="headingOne">
@@ -204,16 +172,13 @@
               </button>
             </h5>
           </div>
-
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-
               Bol u umnjaku ume da se proširi i do uva i veoma je neprijatan. Zbog toga kao rešenje problema, loše
               sraslih umnjaka, preporučujemo operaciju. Nijedna operacija nije prijatna, ali možemo da vas ohrabrimo jer
               ćete posle imati mnogo veliko olakšanje.
               Tačno vreme trajanja same intervencije se nikada ne može znati, ali sama procedura je bezbolna jer se radi
               uz obaveznu anesteziju.
-
               Uglavnom, potrebno je da zakažete i napravite digitalni ortopan snimak ( snimak cele gornje i donje
               vilice). Posle kliničkog pregleda, objasnićemo vam celu proceduru i imaćete mogućnost da postavite pitanja
               o svemu što vas interesuje. </div>
@@ -266,7 +231,7 @@
       </div>
     </div>
   </div>
-  <div class="container drugi" >
+  <div class="container drugi">
     <div class="row sadrzaj" id="drugit">
       <div class="accordion" id="accordionExample2">
         <div class="card">
@@ -305,7 +270,6 @@
               Krunica je zamena za zub koji je toliko oštećen da nijedan oblik konzervativnog lečenja ne može da ga
               spase. Takav zub ili nema živac ili je njegov krunični deo polomljen ili razoren karijesom. Ako je koren
               zdrav, uz adekvatnu pripremu, on može da se sačuva a zub nadoknadi krunom.
-
               Brušenje zuba je minimalno (0,7 mm)
               Nema osetljivosti zuba na termičke nadražaje
               Rub krunice je tanak, pa ne iritira gingivu
@@ -337,8 +301,7 @@
       </div>
     </div>
   </div>
-
-  <div class="container treci" >
+  <div class="container treci">
     <div class="row sadrzaj" id="trecit">
       <div class="accordion" id="accordionExample3">
         <div class="card">
@@ -365,38 +328,21 @@
               centar u Srbiji, lidera u dentalnoj radiologiji J.Morita iz Japana. </div>
           </div>
         </div>
-     
       </div>
     </div>
   </div>
-
-
-
+  <!-- Footer -->
   <footer class="page-footer font-small  pt-3">
-
-
     <div class="container-fluid text-center text-md-left">
-
-
       <div class="row">
-
         <div class="col-md-6 mt-md-0 mt-3">
-
-
-
           <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
-
         </div>
-        <!-- Grid column -->
-
         <hr class="clearfix w-100 d-md-none pb-3">
-
         <!-- Grid column -->
         <div class="col-md-3 mb-md-0 mb-3">
-
           <!-- Links -->
           <h5 class="text-uppercase">Kontakt</h5>
-
           <ul class="list-unstyled">
             <li>
               <a href="#!"><i class="fa fa-github"> Github </i></a>
@@ -411,14 +357,11 @@
               <a href="#!"><i class="fab fa-facebook-messenger"> posaljite nam poruku</i></a>
             </li>
           </ul>
-
         </div>
 
 
 
         <div class="col-md-3 mb-md-0 mb-3">
-
-          <!-- Links -->
           <h5 class="text-uppercase">Radno vreme</h5>
 
           <ul class="list-unstyled">
@@ -442,7 +385,7 @@
 
 
 
-      <div class="footer-copyright text-center py-3">© By BEKA
+      <div class="footer-copyright text-center py-3">© By Aleksandra Ilić
 
       </div>
 
@@ -467,8 +410,6 @@
 
   <script src="js/jQuery/jquery-3.4.0.min.js"></script>
   <script src="js/bootstrap-4/js/bootstrap.min.js"></script>
-
-  <script src="js/korisnici.js"></script>
   <script src="js/main.js"></script>
   <script src="js/admin.js"></script>
 </body>

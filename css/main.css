@@ -69,7 +69,7 @@ img#logo2.img-fluid {
 
 
 
-}
+
 
 div.col-sm-12.col-md-4.col-lg-4 {
   padding-right: 0;
@@ -81,7 +81,7 @@ div.col-sm-12.col-md-4.col-lg-4 {
   height: 100vh;
   width: 100vw;
   min-height: 500px;
-  background-image: url('Assets/img/proba2.jpg');
+  background-image: url('../css/img/proba2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,6 +139,7 @@ font-weight:bold;
 }    
 .prvi {
   display: none;
+
  
 }    
 .drugi{
@@ -157,8 +158,22 @@ font-weight:bold;
 .sadrzaj{
   margin: 20px 0 20px 0 ;
 }
-
-
+button#prvi, button#drugi, button#treci{
+  padding: 10px;
+  background-color: #fff;
+  color: #245497;
+  border: 1px solid #79CFE4;
+  border-radius: 10px;
+}
+button#prvi a:hover, button#drugi a:hover,button#treci a:hover,.btn-link:hover{
+  text-decoration: none;
+  
+  
+}
+button#prvi:hover, button#drugi:hover,button#treci:hover {
+  color: #245497;
+  border-color: #245497;  
+}
 
 
 

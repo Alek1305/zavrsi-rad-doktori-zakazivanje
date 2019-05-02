@@ -38,7 +38,9 @@ $("#prvi ").on("click", function () {
     $(".prvi").toggle( "slow");
     $(".drugi").hide();
     $(".treci").hide();
-
+    $(".fixed-top").css("position","static");
+   
+   
 
 });
 $("#drugi ").on("click", function () {
@@ -46,6 +48,8 @@ $("#drugi ").on("click", function () {
   $(".drugi").toggle( "slow");
   $(".prvi").hide();
   $(".treci").hide();
+  $(".fixed-top").css("position","static");
+ 
 
 });
 $("#treci ").on("click", function () {
@@ -53,6 +57,8 @@ $("#treci ").on("click", function () {
   $(".treci").toggle( "slow");
   $(".prvi").hide();
   $(".drugi").hide();
+  $(".fixed-top").css("position","static");
+ 
 
 });
 
