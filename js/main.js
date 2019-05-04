@@ -29,7 +29,18 @@ function prikaziDoktora(korisnici) {
 
     doktori.innerHTML = kartica;
 }
-$("#prvi ").on("click", function () {
+$("#dropdown-itemOne").on("click", function () {
+ 
+  $(".prvi").toggle( "slow");
+  $(".drugi").hide();
+  $(".treci").hide();
+  $(".fixed-top").css("position","static");
+ 
+ 
+ 
+
+});
+$("#prvi").on("click", function () {
  
     $(".prvi").toggle( "slow");
     $(".drugi").hide();
