@@ -228,8 +228,8 @@ button#prvi:hover, button#drugi:hover,button#treci:hover {
   
   .social_icon{
   position: absolute;
-  right: 20px;
-  top: -45px;
+ 
+  top: -30px;
   }
   
   .input-group-prepend span{
@@ -245,17 +245,9 @@ button#prvi:hover, button#drugi:hover,button#treci:hover {
   
   }
   
-  .remember{
-  color: white;
-  }
+
   
-  .remember input
-  {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  margin-right: 5px;
-  }
+
   
   .login_btn{
   color: black;
@@ -274,6 +266,9 @@ button#prvi:hover, button#drugi:hover,button#treci:hover {
   
   .links a{
   margin-left: 4px;
+  }
+  .drugiModal{
+    background-color: rgba(0,0,0,0.5) !important;
   }
 
 
