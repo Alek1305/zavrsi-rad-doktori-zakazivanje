@@ -5,12 +5,9 @@ fetch('https://randomuser.me/api/?results=6')
 
 
 function prikaziDoktora(korisnici) {
-    const doktori = document.getElementById('doktori');
-
-
-   
+    const doktori = document.getElementById('doktori'); 
+      
     let kartica = ``;
-
     for(let i = 0; i < korisnici.results.length; i++) {
         const doktor = korisnici.results[i];
 
@@ -27,11 +24,10 @@ function prikaziDoktora(korisnici) {
       </div>
       </div>
         
-        `
-      
+        `      
     }
 
-    doktori.innerHTML = kartica
+    doktori.innerHTML = kartica;
 }
 $("#prvi ").on("click", function () {
  

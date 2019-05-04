@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="zakazivanje.html">Zakazivanje</a>
+            <a class="nav-link" href="#exampleModalLong">Zakazivanje</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -42,9 +42,9 @@
               Usluge
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Oralna hirurgija</a>
-              <a class="dropdown-item" href="#">Snimanje zuba</a>
-              <a class="dropdown-item" href="#">Protetika</a>
+              <a class="dropdown-item" href="#prvit">Oralna hirurgija</a>
+              <a class="dropdown-item" href="#drugit">Snimanje zuba</a>
+              <a class="dropdown-item" href="#trecit">Protetika</a>
             </div>
           </li>
           <li class="nav-item" id="prijaviSe">
@@ -101,11 +101,11 @@
                         </div>
                         <div class="form-row">
                           <div class="col">
-                            <select class="custom-select form-control">
-                              <option selected>Izaberite</option>
-                              <option name="Snimanje zuba" value="1">Snimanje zuba</option>
-                              <option name="Proteze" value="2">Protetika</option>
-                              <option name="Estetska hirurgija" value="3">Oralna hirurgija</option>
+                            <select class="custom-select form-control" name="Vrsta pregleda" required >
+                                <option value="" disabled selected>Izaberite</option>
+                              <option id="snimanjezuba" name="Snimanje zuba" value="Snimanje zuba">Snimanje zuba</option>
+                              <option name="Proteze" value="Protetika">Protetika</option>
+                              <option name="Estetska hirurgija" value="Oralna hirurgija">Oralna hirurgija</option>
                             </select>
                           </div>
                         </div>
@@ -353,9 +353,7 @@
             <li>
               <a href="#!"><i class="fab fa-instagram"> Instagram</i></a>
             </li>
-            <li>
-              <a href="#!"><i class="fab fa-facebook-messenger"> posaljite nam poruku</i></a>
-            </li>
+           
           </ul>
         </div>
 
@@ -366,13 +364,13 @@
 
           <ul class="list-unstyled">
             <li>
-              radimo ceo dan
+              Ponedeljak - Petak 08:00 - 20:00
             </li>
             <li>
-              radimo ceo dan
+             Subota 09:00 - 15:00
             </li>
             <li>
-              radimo ceo dan
+              Nedeljom ne radimo
             </li>
 
           </ul>

@@ -104,8 +104,10 @@ font-weight:bold;
 }
 .zakazivanjebtn{
   background-color: #fff;
-  color:#245497;
+  color:#79CFE4;
   padding: 20px;
+  font-weight: bold;
+  border: 2px solid #79CFE4;
 }
 .form-control{
  
