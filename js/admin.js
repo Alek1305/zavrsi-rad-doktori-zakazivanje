@@ -1,3 +1,8 @@
+
+
+
+
+
 const admini = {
     "results": [{"username" : "admin", "password" : "admin567", "fullName" : "Aleksandra Ilic"},
     {"username" : "beka", "password" : "beka567", "fullName" : "AI" }]
@@ -14,7 +19,7 @@ function logIn () {
             localStorage.setItem("trenutniKorisnik", admin.fullName);
             localStorage.setItem("trenutnaLozinka", admin.password);
 
-            location.href = "index.html";
+            
            
             
             
@@ -22,8 +27,14 @@ function logIn () {
 
         }
     }
+    $(document).ready(
+        function Error(){
+        window.location.href="logIn.html";
+    },
+    alert("Ne postoji korisnik ili je sifra pogresna")
+    )
 
-    alert("Ne postoji korisnik ili je sifra pogresna");
+    
   
 
 }
@@ -44,13 +55,7 @@ function postaviTrenutnogKorisnika () {
   
 } 
 
-function prikaziKorisnika () {
-    postaviTrenutnogKorisnika();
-    var imePrezime = localStorage.getItem("trenutniKorisnik");
-    var lozinka = localStorage.getItem('trenutnaLozinka');
 
-    
-}
 
 
 function logOut () {
