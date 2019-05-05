@@ -303,11 +303,29 @@ input[type="date"] {
   
   
   
-  @media (min-width: 500px) {
-	.content {
-	  width: 43%;
-	}
-	#button {
-	  margin: 30px;
-	}
-  }
+.futer{
+	background-color: #245497 ;
+}
+
+.ikonica{
+	text-decoration: none;
+	text-transform: none;
+	color: azure;
+	font-size: 30px;
+}
+.ikonica:hover{
+color: #79CFE4;
+}
+.naslov{
+	color: azure;
+	font-size: 25px;
+}
+.ime{
+	color: azure;
+
+}
+.ime:hover{
+	color: aqua;
+	font-size: 40px;
+	transition: 3s;
+}
