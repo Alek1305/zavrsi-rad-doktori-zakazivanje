@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 
 <head>
   <meta charset="utf-8" />
@@ -17,6 +17,7 @@
 
 
 <body onload="postaviTrenutnogKorisnika()">
+    <a id="button"><i class="fas fa-chevron-up"></i></a>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-sm navbar-light  shadow  fixed-top ">
     <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
@@ -42,9 +43,9 @@
               Usluge
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#collapseOne" id="dropdown-itemOne">Oralna hirurgija</a>
-              <a class="dropdown-item" href="#drugit">Snimanje zuba</a>
-              <a class="dropdown-item" href="#trecit">Protetika</a>
+              <a class="dropdown-item" href="#PrviKont" id="dropdown-itemOne">Oralna hirurgija</a>
+              <a class="dropdown-item" href="#DrugiKont" id="dropdown-itemTwo">Snimanje zuba</a>
+              <a class="dropdown-item" href="#TreciKont" id="dropdown-itemThree">Protetika</a>
             </div>
           </li>
           <li class="nav-item" id="prijaviSe">
@@ -74,12 +75,12 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLongTitle">Zakazite svoj pregled</h5>
-                      <button type="button " class="close" data-dismiss="modal" aria-label="Close">
+                      <button  class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                      <form action="https://formspree.io/alek.ilic13@gmail.com" method="POST">
+                      <form action="https://formspree.io/alek.ilic13@gmail.com" method="POST" id="ZakazivanjePregleda">
                         <div class="form-row">
                           <div class="col">
                             <input type="text" name="ime" required id="ime" class="form-control" placeholder="Ime">
@@ -103,18 +104,29 @@
                           <div class="col">
                             <select class="custom-select form-control" name="Vrsta pregleda" required >
                                 <option value="" disabled selected>Izaberite</option>
-                              <option id="snimanjezuba" name="Snimanje zuba" value="Snimanje zuba">Snimanje zuba</option>
-                              <option name="Proteze" value="Protetika">Protetika</option>
-                              <option name="Estetska hirurgija" value="Oralna hirurgija">Oralna hirurgija</option>
+                              <option   value="Snimanje zuba">Snimanje zuba</option>
+                              <option  value="Protetika">Protetika</option>
+                              <option  value="Oralna hirurgija">Oralna hirurgija</option>
                             </select>
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="col">
-                            <input class="btn  btn-primary" type="submit" value="Posalji">
+                            <input type="date" name="Vreme" id="">
+                          </div>
+                          
+                        </div>
+                        <div class="form-row">
+                          <div class="col">
+                            <input class="btn  btn-primary" id="posalji"  type="button" value="Posalji">
                             <input class="btn  btn-primary" type="reset" value="Obriši">
                           </div>
                         </div>
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">Uspešno ste poslali Vaše podatke!</h4>
+                            <p>Uskoro Vam šaljemo mejl sa kojim potvrđujemo zakazani pregled</p>
+                            
+                          </div>
                       </form>
                     </div>
                   </div>
@@ -138,21 +150,21 @@
             <img class="card-img-top" src="css/img/osmeh1.jpg" alt="osmeh1.jpg">
             <div class="card-body">
               <h5 class="card-title">Oralna hirurgija</h5>
-              <button id="prvi"><a href="#card1"> Opsirnije</a></button>
+             <a href="#card1"> <button id="prvi"> Opsirnije</button></a>
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="css/img/osmeh3.jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Protetika</h5>
-              <button id="drugi"><a href="#drugit"> Opsirnije</a></button>
+              <a href="#drugit"><button id="drugi"> Opsirnije</button></a>
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="css/img/osmeh3.jpg" alt="osmeh3.jpg">
+            <img class="card-img-top" src="css/img/xray (2).jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Snimanje zuba</h5>
-              <button id="treci"><a href="#trecit"> Opsirnije</a></button>
+              <a href="#trecit">   <button id="treci">Opsirnije</button></a>
             </div>
           </div>
         </div>
@@ -160,11 +172,11 @@
     </div>
   </div>
   <!-- Content of cards -->
-  <div class="container prvi">
+  <div  class="container prvi" id="PrviKont">
     <div class="row sadrzaj" id="prvit">
       <div class="accordion" id="accordionExample">
         <div class="card" id="card1">
-          <div class="card-header" id="headingOne">
+          <div class="card-header" id="headingOne1">
             <h5 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
@@ -172,7 +184,7 @@
               </button>
             </h5>
           </div>
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne1" data-parent="#accordionExample">
             <div class="card-body">
               Bol u umnjaku ume da se proširi i do uva i veoma je neprijatan. Zbog toga kao rešenje problema, loše
               sraslih umnjaka, preporučujemo operaciju. Nijedna operacija nije prijatna, ali možemo da vas ohrabrimo jer
@@ -185,7 +197,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingTwo">
+          <div class="card-header" id="headingTwo2">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="false" aria-controls="collapseTwo">
@@ -193,7 +205,7 @@
               </button>
             </h5>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample">
             <div class="card-body">
               U prvoj fazi se pravi rez. Postoje različite metode ove operacije, tako će i lokalizacija ovog reza
               zavisiti od metode. Kada se načini rez, podigne se sluzokoža i površinski deo kosti, postepeno se uklanja
@@ -206,7 +218,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingThree3">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
                 aria-expanded="false" aria-controls="collapseThree">
@@ -214,7 +226,7 @@
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree3" data-parent="#accordionExample">
             <div class="card-body">
               Ciste se mogu podeliti po različitim karakteristikama, a vrlo česta klasifikacija je na akutne ciste na
               zubu i hronične zubne ciste.
@@ -231,7 +243,7 @@
       </div>
     </div>
   </div>
-  <div class="container drugi">
+  <div class="container drugi" id="DrugiKont">
     <div class="row sadrzaj" id="drugit">
       <div class="accordion" id="accordionExample2">
         <div class="card">
@@ -259,13 +271,13 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo">
                 Bezmetalne krunice
               </button>
             </h5>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+          <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample2">
             <div class="card-body">
               Krunica je zamena za zub koji je toliko oštećen da nijedan oblik konzervativnog lečenja ne može da ga
               spase. Takav zub ili nema živac ili je njegov krunični deo polomljen ili razoren karijesom. Ako je koren
@@ -280,15 +292,15 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingThree7">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree">
                 Metalokeramički mostovi
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample2">
+          <div id="collapseThree7" class="collapse" aria-labelledby="headingThree7" data-parent="#accordionExample2">
             <div class="card-body">
               Izradjuju se kod nedostatka jednog ili više zuba, kad raspored preostalih zuba omogućava da se na njih
               putem kruna naslone zubi koji nedostaju.
@@ -301,20 +313,20 @@
       </div>
     </div>
   </div>
-  <div class="container treci">
+  <div class="container treci" id="TreciKont">
     <div class="row sadrzaj" id="trecit">
       <div class="accordion" id="accordionExample3">
         <div class="card">
-          <div class="card-header" id="headingOne">
+          <div class="card-header" id="headingOne4">
             <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne1"
-                aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne4"
+                aria-expanded="true" aria-controls="collapseOne4">
                 Rendgen uređaji i snimanje zuba
               </button>
             </h5>
           </div>
 
-          <div id="collapseOne1" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample3">
+          <div id="collapseOne4" class="collapse " aria-labelledby="headingOne4" data-parent="#accordionExample3">
             <div class="card-body">
               Naša dijagnostička oprema za snimanje zuba garantuje odličan kvalitet slike dok je izlaganje pacijenta
               zračenju nisko. Nudimo niz sistema koji pokrivaju sve moguće stomatološke indikacije. Kombinaciju sistema
@@ -345,7 +357,7 @@
           <h5 class="text-uppercase">Kontakt</h5>
           <ul class="list-unstyled">
             <li>
-              <a href="#!"><i class="fa fa-github"> Github </i></a>
+              <a href="#!"><i class="fab fa-github"> Github </i></a>
             </li>
             <li>
               <a href="#!"><i class="fab fa-facebook-f"> Facebook</i></a>
@@ -356,9 +368,6 @@
            
           </ul>
         </div>
-
-
-
         <div class="col-md-3 mb-md-0 mb-3">
           <h5 class="text-uppercase">Radno vreme</h5>
 
@@ -378,15 +387,11 @@
         </div>
 
 
-      </div>
+     
 
 
 
-
-      <div class="footer-copyright text-center py-3">© By Aleksandra Ilić
-
-      </div>
-
+</div>
 
   </footer>
 

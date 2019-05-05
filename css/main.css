@@ -1,280 +1,313 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 li.nav-item {
-  color: #79CFE4;
+	color: #79CFE4;
 }
 
 nav {
-  
-  background-color: #fff;
-
+	background-color: #fff;
 }
 
-
 .navbar-toggler {
-  margin: 20px;
-  
+	margin: 20px;
 }
 
 .velikoSlovo {
-  text-transform: capitalize;
+	text-transform: capitalize;
 }
- 
 
 h3 {
-  color: white;
-  cursor: pointer;
+	color: white;
+	cursor: pointer;
 }
 
-div.col-sm-12.col-md-6.col-lg-6
- {
-  margin-top: 20px;
+div.col-sm-12.col-md-6.col-lg-6 {
+	margin-top: 20px;
 }
-ul.informacije{
-  list-style: none;
-  margin: 10px 0 0 10px;
-  
+
+ul.informacije {
+	list-style: none;
+	margin: 10px 0 0 10px;
 }
 
 footer.container-fluid {
-  background-color: #d9dce0;
-  padding: 0;
+	background-color: #d9dce0;
+	padding: 0;
 }
 
 form.vesti {
-  margin: 10px 0 0 10px;
+	margin: 10px 0 0 10px;
 }
 
 ul.informacije li a {
-  text-decoration: none;
-  padding: 5px;
+	text-decoration: none;
+	padding: 5px;
 }
 
 #logo2 {
-  margin: 10px 0 0 10px;
-
+	margin: 10px 0 0 10px;
 }
 
 img#logo2.img-fluid {
-  width: 300px;
+	width: 300px;
 }
-
-
-
-
-
 
 div.col-sm-12.col-md-4.col-lg-4 {
-  padding-right: 0;
+	padding-right: 0;
 }
-
-
 
 .masthead {
-  height: 100vh;
-  width: 100vw;
-  min-height: 500px;
-  background-image: url('../css/img/proba2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
- 
+	height: 100vh;
+	width: 100vw;
+	min-height: 500px;
+	background-image: url('../css/img/proba2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.col{
-  margin-top: 15px;
+.col {
+	margin-top: 15px;
 }
-.zakazivanjebtn:hover{
-  background-color: #fff;
-  color:#79CFE4;
-border-color: #ccc; 
 
-font-size: 35px;
-transition: 2s;
-font-weight:bold;
+.zakazivanjebtn:hover {
+	background-color: #fff;
+	color: #79CFE4;
+	border-color: #ccc;
+	font-size: 35px;
+	transition: 2s;
+	font-weight: bold;
+}
 
+.zakazivanjebtn {
+	background-color: #fff;
+	color: #79CFE4;
+	padding: 20px;
+	font-weight: bold;
+	border: 2px solid #79CFE4;
 }
-.zakazivanjebtn{
-  background-color: #fff;
-  color:#79CFE4;
-  padding: 20px;
-  font-weight: bold;
-  border: 2px solid #79CFE4;
-}
-.form-control{
- 
-  border-radius: 10px;
 
+.form-control {
+	border-radius: 10px;
+}
 
+.dropdown-menu {
+	border-radius: 10px;
 }
-.dropdown-menu{
-  border-radius: 10px;
 
+.dropdown-item {
+	color: #245497;
 }
-.dropdown-item{
-  color: #245497;
-}
-.dropdown-item:hover{
-  background-color:#79CFE4;
-  color: white;
-}
-.nav-link{
-  color: #79CFE4 !important;
-  font-size: 20px;
-  padding: 15px;
-  margin: 15px;
-}
-.nav-link:hover{
-  color:white !important;
-  background-color:  #79CFE4;
-  transition: 1.5s;
-  border-radius: 10px;
 
-}    
+.dropdown-item:hover {
+	background-color: #79CFE4;
+	color: white;
+}
+
+.nav-link {
+	color: #79CFE4 !important;
+	font-size: 20px;
+	padding: 15px;
+	margin: 15px;
+}
+
+.nav-link:hover {
+	color: white !important;
+	background-color: #79CFE4;
+	transition: 1.5s;
+	border-radius: 10px;
+}
+
 .prvi {
-  display: none;
+	display: none;
+}
 
- 
-}    
-.drugi{
-  display: none;
- 
-}           
+.drugi {
+	display: none;
+}
 
 .treci {
-  display: none;
-
-}           
-.logovanje{
-  margin: 30px;
-  
-}
-.sadrzaj{
-  margin: 20px 0 20px 0 ;
-}
-button#prvi, button#drugi, button#treci{
-  padding: 10px;
-  background-color: #fff;
-  color: #245497;
-  border: 1px solid #79CFE4;
-  border-radius: 10px;
-}
-button#prvi a:hover, button#drugi a:hover,button#treci a:hover,.btn-link:hover{
-  text-decoration: none;
-  
-  
-}
-button#prvi:hover, button#drugi:hover,button#treci:hover {
-  color: #245497;
-  border-color: #245497;  
-}
-.logrow{
-  
-   
-    width: 300px;
-    height: 400px;
-    margin: 70px auto;
-  
+	display: none;
 }
 
+.logovanje {
+	margin: 30px;
+}
+
+.sadrzaj {
+	margin: 20px 0 20px 0;
+}
+
+button#prvi,
+button#drugi,
+button#treci {
+	padding: 10px;
+	background-color: #fff;
+	color: #245497;
+	border: 1px solid #79CFE4;
+	border-radius: 10px;
+}
+
+button#prvi a:hover,
+button#drugi a:hover,
+button#treci a:hover,
+.btn-link:hover {
+	text-decoration: none;
+}
+
+button#prvi:hover,
+button#drugi:hover,
+button#treci:hover {
+	color: #245497;
+	border-color: #245497;
+}
+
+.logrow {
+	width: 300px;
+	height: 400px;
+	margin: 70px auto;
+}
+
+.loggin {
+	height: 100vh;
+	width: 100vw;
+	min-height: 500px;
+	background-image: url('img/pozadina.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.singin {
+	height: 100%;
+	align-content: center;
+}
+
+.prijavi {
+	height: 370px;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 400px;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.social_icon span {
+	font-size: 60px;
+	margin-left: 10px;
+	color: #79CFE4;
+}
+
+.social_icon span:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.card-header h3 {
+	color: white;
+}
+
+.social_icon {
+	position: absolute;
+	top: -30px;
+}
+
+.input-group-prepend span {
+	width: 50px;
+	background-color: #79CFE4;
+	color: black;
+	border: 0 !important;
+}
+
+input#username:focus,
+input#password:focus {
+	outline: 0 0 0 0 !important;
+	box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn {
+	color: black;
+	background-color: #79CFE4;
+	width: 100px;
+}
+
+.login_btn:hover {
+	color: black;
+	background-color: white;
+}
+
+.links {
+	color: white;
+}
+
+.links a {
+	margin-left: 4px;
+}
+
+.drugiModal {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
 
 
-.loggin{
-  height: 100vh;
-  width: 100vw;
-  min-height: 500px;
-  background-image: url('img/pozadina.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  }
-  
-  .singin{
-  height: 100%;
-  align-content: center;
-  }
-  
-  .prijavi{
-  height: 370px;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 400px;
-  background-color: rgba(0,0,0,0.5) !important;
-  }
-  
-  .social_icon span{
-  font-size: 60px;
-  margin-left: 10px;
-  color: #79CFE4;
-  }
-  
-  .social_icon span:hover{
-  color: white;
-  cursor: pointer;
-  }
-  
-  .card-header h3{
-  color: white;
-  }
-  
-  .social_icon{
-  position: absolute;
- 
-  top: -30px;
-  }
-  
-  .input-group-prepend span{
-  width: 50px;
-  background-color:  #79CFE4;
-  color: black;
-  border:0 !important;
-  }
-  
-  input#username:focus,input#password:focus{
-  outline: 0 0 0 0  !important;
-  box-shadow: 0 0 0 0 !important;
-  
-  }
-  
 
-  
+input[type="date"] {
+  background-color: #79CFE4;
+  color: floralwhite;
+  outline: none;
+}
 
-  
-  .login_btn{
-  color: black;
-  background-color:  #79CFE4;
-  width: 100px;
-  }
-  
-  .login_btn:hover{
-  color: black;
-  background-color: white;
-  }
-  
-  .links{
-  color: white;
-  }
-  
-  .links a{
-  margin-left: 4px;
-  }
-  .drugiModal{
-    background-color: rgba(0,0,0,0.5) !important;
+.alert{
+	display: none;
+}
+#button {
+	display: inline-block;
+  background-color: #79CFE4;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
   }
 
-
-
-
-
+  i.fas.fa-chevron-up{
+	  text-align: center;
+	  font-size: 30px;
+	  margin-top: 10px;
+	  color: #fff;
+  }
+  #button:hover {
+	cursor: pointer;
+	background-color: #245497;
+  }
+  #button:active {
+	background-color: #245497;
+  }
+  #button.show {
+	opacity: 1;
+	visibility: visible;
+  }
   
-
-
+  
+  
+  
+  @media (min-width: 500px) {
+	.content {
+	  width: 43%;
+	}
+	#button {
+	  margin: 30px;
+	}
+  }
