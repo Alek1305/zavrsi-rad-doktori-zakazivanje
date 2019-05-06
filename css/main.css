@@ -21,6 +21,7 @@ nav {
 
 .velikoSlovo {
 	text-transform: capitalize;
+	margin: 5px;
 }
 
 h3 {
@@ -315,6 +316,7 @@ input[type="date"] {
 }
 .ikonica:hover{
 color: #79CFE4;
+text-decoration: none;
 }
 .naslov{
 	color: azure;
@@ -328,4 +330,28 @@ color: #79CFE4;
 	color: aqua;
 	font-size: 40px;
 	transition: 3s;
+}
+.alert.alert-success,.alert.alert-warning{
+	display: none;
+}
+.card-body.kard{
+	border: 1px solid #245497;
+margin: 5px;
+}    
+.card-text:last-child {
+    margin-bottom: 0;
+    color: darkcyan;
+    border: 1px solid;
+    padding: 5px;
+}
+.logaut{
+	background-color: #fff;
+	color: #245497;
+	padding: 20px;
+	font-weight: bold;
+	border: 2px solid gray;
+	margin: 15px;
+}
+.card-deck{
+	margin-bottom: 20px;
 }

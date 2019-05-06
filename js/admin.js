@@ -16,7 +16,7 @@ function logIn () {
         if (admin.username === userName && admin.password === password ) {
             
             alert("Ulogovali ste se");
-            localStorage.setItem("trenutniKorisnik", admin.fullName);
+            localStorage.setItem("trenutniAdmin", admin.fullName);
             localStorage.setItem("trenutnaLozinka", admin.password);
 
             
@@ -31,7 +31,7 @@ function logIn () {
         function Error(){
         window.location.href="logIn.html";
     },
-    alert("Ne postoji korisnik ili je sifra pogresna")
+    alert("Pogrešno ste uneli podatke!")
     )
 
     
@@ -43,11 +43,11 @@ function logIn () {
 
 
 
-function postaviTrenutnogKorisnika () {
-    var trenutniKorisnik = localStorage.getItem("trenutniKorisnik");
-    var ivan = document.getElementById("trenutniKorisnik");
-    ivan.innerHTML = trenutniKorisnik;
-    if(trenutniKorisnik){
+function postaviTrenutnogAdmina () {
+    var trenutniAdmin = localStorage.getItem("trenutniAdmin");
+    var trenutniA = document.getElementById("trenutniAdmin");
+    trenutniA.innerHTML = trenutniAdmin;
+    if(trenutniAdmin){
          document.querySelector('#prijaviSe a').innerHTML='';
     }
   
@@ -59,7 +59,7 @@ function postaviTrenutnogKorisnika () {
 
 
 function logOut () {
-    localStorage.setItem("trenutniKorisnik", "", 1);
+    localStorage.setItem("trenutniAdmin", "", 1);
    localStorage.setItem("trenutnaLozinka", "", 1);
    
    
@@ -80,3 +80,12 @@ btn.on('click', function(e) {
 });
 
 
+$("#dropdown-itemOne").on("click", function () {
+    
+  $(".prvi").show();
+$(".drugi").hide();
+$(".treci").hide();
+$(".fixed-top").css("position","static");
+ 
+
+});
