@@ -116,7 +116,8 @@ img#logo2.img-fluid {
 }
 
 .sadrzaj {
-	margin: 20px 0 20px 0;
+	margin: 20px 0 20px 10px;
+	display: inline;
 }
 
 button#prvi,
@@ -315,6 +316,7 @@ i.fas.fa-chevron-up {
 .kard {
 	border: 1px solid #245497;
 	margin: 5px;
+	border-radius: 3px;
 }
 
 .card-text:last-child {
@@ -339,4 +341,5 @@ i.fas.fa-chevron-up {
 
 .zak {
 	cursor: pointer;
+	
 }
