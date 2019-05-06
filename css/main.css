@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	
 }
 
 body {
@@ -30,15 +29,6 @@ h3 {
 	cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
 #logo2 {
 	margin: 10px 0 0 10px;
 }
@@ -46,8 +36,6 @@ h3 {
 img#logo2.img-fluid {
 	width: 300px;
 }
-
-
 
 .masthead {
 	height: 100vh;
@@ -241,20 +229,19 @@ input#password:focus {
 	background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-
-
 input[type="date"] {
-  background-color: #79CFE4;
-  color: floralwhite;
-  outline: none;
+	background-color: #79CFE4;
+	color: floralwhite;
+	outline: none;
 }
 
-.alert{
+.alert {
 	display: none;
 }
+
 #button {
 	display: inline-block;
-  background-color: #79CFE4;
+	background-color: #79CFE4;
 	width: 50px;
 	height: 50px;
 	text-align: center;
@@ -262,76 +249,82 @@ input[type="date"] {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	transition: background-color .3s, 
-	  opacity .5s, visibility .5s;
+	transition: background-color .3s, opacity .5s, visibility .5s;
 	opacity: 0;
 	visibility: hidden;
 	z-index: 1000;
-  }
-
-  i.fas.fa-chevron-up{
-	  text-align: center;
-	  font-size: 30px;
-	  margin-top: 10px;
-	  color: #fff;
-  }
-  #button:hover {
-	cursor: pointer;
-	background-color: #245497;
-  }
-  #button:active {
-	background-color: #245497;
-  }
-  #button.show {
-	opacity: 1;
-	visibility: visible;
-  }
-  
-  
-  
-  
-.futer{
-	background-color: #245497 ;
 }
 
-.ikonica{
+i.fas.fa-chevron-up {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+	color: #fff;
+}
+
+#button:hover {
+	cursor: pointer;
+	background-color: #245497;
+}
+
+#button:active {
+	background-color: #245497;
+}
+
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.futer {
+	background-color: #245497;
+}
+
+.ikonica {
 	text-decoration: none;
 	text-transform: none;
 	color: azure;
 	font-size: 30px;
 }
-.ikonica:hover{
-color: #79CFE4;
-text-decoration: none;
+
+.ikonica:hover {
+	color: #79CFE4;
+	text-decoration: none;
 }
-.naslov{
+
+.naslov {
 	color: azure;
 	font-size: 25px;
 }
-.ime{
-	color: azure;
 
+.ime {
+	color: azure;
 }
-.ime:hover{
+
+.ime:hover {
 	color: aqua;
 	font-size: 40px;
 	transition: 3s;
 }
-.alert.alert-success{
+
+.alert.alert-success {
 	display: none;
 	margin: 10px;
 }
-.kard{
+
+.kard {
 	border: 1px solid #245497;
-margin: 5px;
-}    
-.card-text:last-child {
-    margin-bottom: 0;
-    color: darkcyan;
-    border: 1px solid;
-    padding: 5px;
+	margin: 5px;
 }
-.logaut{
+
+.card-text:last-child {
+	margin-bottom: 0;
+	color: darkcyan;
+	border: 1px solid;
+	padding: 5px;
+}
+
+.logaut {
 	background-color: #fff;
 	color: #245497;
 	padding: 20px;
@@ -339,10 +332,11 @@ margin: 5px;
 	border: 2px solid gray;
 	margin: 15px;
 }
-.card-deck{
+
+.card-deck {
 	margin-bottom: 20px;
 }
+
 .zak {
-   
-    cursor: pointer;
+	cursor: pointer;
 }

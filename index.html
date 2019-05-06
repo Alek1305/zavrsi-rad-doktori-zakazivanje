@@ -17,7 +17,7 @@
 
 
 <body onload="postaviTrenutnogAdmina()">
-    <a id="button"><i class="fas fa-chevron-up"></i></a>
+  <a id="button"><i class="fas fa-chevron-up"></i></a>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-sm navbar-light  shadow  fixed-top ">
     <a class="navbar-brand" href="index.html"><img class="img-fluid" src="css/img/logo-2.png" alt="logo"></a>
@@ -58,7 +58,6 @@
       </div>
     </div>
   </nav>
-
   <!-- Masthead -->
   <div class="container">
     <div class="row">
@@ -75,7 +74,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLongTitle">Zakazite svoj pregled</h5>
-                      <button  class="close" data-dismiss="modal" aria-label="Close">
+                      <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
@@ -102,11 +101,11 @@
                         </div>
                         <div class="form-row">
                           <div class="col">
-                            <select class="custom-select form-control" name="Vrsta pregleda" required >
-                                <option value="" disabled selected>Izaberite</option>
-                              <option   value="Snimanje zuba">Snimanje zuba</option>
-                              <option  value="Protetika">Protetika</option>
-                              <option  value="Oralna hirurgija">Oralna hirurgija</option>
+                            <select class="custom-select form-control" name="Vrsta pregleda" required>
+                              <option value="" disabled selected>Izaberite</option>
+                              <option value="Snimanje zuba">Snimanje zuba</option>
+                              <option value="Protetika">Protetika</option>
+                              <option value="Oralna hirurgija">Oralna hirurgija</option>
                             </select>
                           </div>
                         </div>
@@ -115,19 +114,18 @@
                             <label for="datum">Odaberite datum:</label>
                             <input type="date" name="Vreme" id="datum">
                           </div>
-                          
+
                         </div>
                         <div class="form-row">
                           <div class="col">
-                            <input class="btn  btn-primary" id="posalji"  type="button" value="Posalji">
+                            <input class="btn  btn-primary" id="posalji" type="button" value="Posalji">
                             <input class="btn  btn-primary" type="reset" value="Obriši">
                           </div>
                         </div>
                         <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">Uspešno ste poslali Vaše podatke!</h4>
-                            <p>Uskoro Vam šaljemo mejl sa kojim potvrđujemo zakazani pregled</p>
-                            
-                          </div>
+                          <h4 class="alert-heading">Uspešno ste poslali Vaše podatke!</h4>
+                          <p>Uskoro Vam šaljemo mejl sa kojim potvrđujemo zakazani pregled</p>
+                        </div>
                       </form>
                     </div>
                   </div>
@@ -139,12 +137,8 @@
       </div>
     </div>
   </div>
-
-
-  <!-- Cards -->
-<div class="container" id="cards">
-
-
+  <!-- Kartice -->
+  <div class="container" id="cards">
     <div class="row">
       <div class="col">
         <div class="card-deck">
@@ -159,7 +153,7 @@
             <img class="card-img-top" src="css/img/ossmeh.jpg" alt="osmeh3.jpg">
             <div class="card-body">
               <h5 class="card-title">Protetika</h5>
-            <a href="#DrugiKont" id="drugi"> Opsirnije</a>
+              <a href="#DrugiKont" id="drugi"> Opsirnije</a>
             </div>
           </div>
           <div class="card">
@@ -173,8 +167,9 @@
       </div>
     </div>
   </div>
-  <!-- Content of cards -->
-  <div  class="container prvi" id="PrviKont">
+  <!-- Sadrzaj kartica -->
+  <!-- Prva kartica -->
+  <div class="container prvi" id="PrviKont">
     <div class="row sadrzaj" id="prvit">
       <div class="accordion" id="accordionExample">
         <div class="card" id="card1">
@@ -245,6 +240,7 @@
       </div>
     </div>
   </div>
+  <!-- Druga kartica -->
   <div class="container drugi" id="DrugiKont">
     <div class="row sadrzaj" id="drugit">
       <div class="accordion" id="accordionExample2">
@@ -257,13 +253,11 @@
               </button>
             </h5>
           </div>
-
           <div id="collapseOne1" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample2">
             <div class="card-body">
               Najvrednije zubne nadoknade koje trenutno postoje,u biološkom i estetskom smislu,su keramičke fasete ili
               viniri. Indikovani su obično za izradu gornjih prednjih zuba.Postavljaju se samo na spoljašnju stranu
               zuba. Ovo su biološki vredne nadoknade jer je priprema zuba minimalna.
-
               Naime skida se samo 0,3 do 0,5 mm zubne supstance s prednje strane zuba(za metalokeramiku se skida 1,5
               do2.0 mm sa svih strana zuba). Koriste se za korekciju boje i oblika, a redje nepravilnosti položaja
               zuba.Materijal koji se koristi,je top kvaliteta,u smislu trajnosti, biokompatibilnosti i prirodnosti.
@@ -315,6 +309,7 @@
       </div>
     </div>
   </div>
+  <!-- Treca kartica -->
   <div class="container treci" id="TreciKont">
     <div class="row sadrzaj" id="trecit">
       <div class="accordion" id="accordionExample3">
@@ -327,97 +322,60 @@
               </button>
             </h5>
           </div>
-
           <div id="collapseOne4" class="collapse " aria-labelledby="headingOne4" data-parent="#accordionExample3">
             <div class="card-body">
               Naša dijagnostička oprema za snimanje zuba garantuje odličan kvalitet slike dok je izlaganje pacijenta
               zračenju nisko. Nudimo niz sistema koji pokrivaju sve moguće stomatološke indikacije. Kombinaciju sistema
               za digitalna panoramska i 3D snimanja čine Morita Veravievepocs 2D i Morita Veravievepocs 3D R100 koji
-              obezbeđuje najbolji kvalitet slike.
-              Pored digitalnih uređaja, Morita program takođe uključuje i intraoralni sistem za snimanje Veraview iX.
+              obezbeđuje najbolji kvalitet slike.Pored digitalnih uređaja, Morita program takođe uključuje i intraoralni sistem za snimanje Veraview iX.
               Svi se snimci obrađuju u naprednom softveru i-Dixel, dok se uz svaki 3D snimak isporučuje besplatni
-              softver One Data Viewer.
-
-              Kompletiran na ovaj način, Morita Dentalni Rendgen Centar u Beogradu je danas prvi i jedini referentni
+              softver One Data Viewer.Kompletiran na ovaj način, Morita Dentalni Rendgen Centar u Beogradu je danas prvi i jedini referentni
               centar u Srbiji, lidera u dentalnoj radiologiji J.Morita iz Japana. </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-<!-- Footer -->
-<footer class="page-footer font-small blue">
-   
-        <div class=" futer">
-  
-          <!-- Grid row-->
-          <div class="row py-4 d-flex align-items-center">
-  
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0 povezi">
-              <h6 class="mb-0 naslov">Povežite se sa nama!</h6>
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-7 text-center text-md-center ">
-  
-              <!-- Facebook -->
-              <a class="fb-ic ikonica" href="#">
-                <i class="fab fa-facebook-f white-text mr-4"> </i>
-              </a>
-              <!-- Twitter -->
-              <a class="tw-ic ikonica" href="#">
-                <i class="fab fa-twitter white-text mr-4"> </i>
-              </a>
-              <!-- Google +-->
-              <a class="gplus-ic ikonica" href="#">
-                <i class="fab fa-google-plus-g white-text mr-4"> </i>
-              </a>
-              <!--Linkedin -->
-              <a class="li-ic ikonica" href="#">
-                <i class="fab fa-linkedin-in white-text mr-4"> </i>
-              </a>
-              <!--Instagram-->
-              <a class="ins-ic ikonica" href="#">
-                <i class="fab fa-instagram white-text"> </i>
-              </a>
-  
-            </div>
-            <!-- Grid column -->
-  
-          </div>
-          <!-- Grid row-->
-  
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <div class=" futer">
+      <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0 povezi">
+          <h6 class="mb-0 naslov">Povežite se sa nama!</h6>
         </div>
-     
+        <div class="col-md-6 col-lg-7 text-center text-md-center ">
+          <!-- Facebook -->
+          <a class="fb-ic ikonica" href="#">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic ikonica" href="#">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic ikonica" href="#">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic ikonica" href="#">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic ikonica" href="#">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 futer naslov">© 2019 Copyright:
+    <div class="footer-copyright text-center py-3 futer naslov">&copy; 2019 Copyright:
       <a href="https://github.com/Alek1305/zavrsi-rad-doktori-zakazivanje" class="ime"> Aleksandra Ilić</a>
     </div>
-   
-  
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <script src="js/jQuery/jquery-3.4.0.min.js"></script>
   <script src="js/bootstrap-4/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/admin.js"></script>
 </body>
-
 </html>

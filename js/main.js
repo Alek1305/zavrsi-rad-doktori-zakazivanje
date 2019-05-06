@@ -1,111 +1,93 @@
-
-
-
 // Navigacija
 $("#dropdown-itemOne").on("click", function () {
- 
-  $("#PrviKont").show();
-  $(".drugi").hide();
-  $(".treci").hide();
-  $(".fixed-top").css("position","static");
- 
- 
- 
+
+	$("#PrviKont").show();
+	$(".drugi").hide();
+	$(".treci").hide();
+	$(".fixed-top").css("position", "static");
+
 
 });
 $("#dropdown-itemTwo").on("click", function () {
- 
-  $(".prvi").hide();
-  $("#DrugiKont").show();
-  $(".treci").hide();
-  $(".fixed-top").css("position","static");
- 
- 
- 
+
+	$(".prvi").hide();
+	$("#DrugiKont").show();
+	$(".treci").hide();
+	$(".fixed-top").css("position", "static");
+
 
 });
 $("#dropdown-itemThree").on("click", function () {
- 
-  $(".prvi").hide();
-  $(".drugi").hide();
-  $("#TreciKont").show();
-  $(".fixed-top").css("position","static");
- 
- 
- 
+
+	$(".prvi").hide();
+	$(".drugi").hide();
+	$("#TreciKont").show();
+	$(".fixed-top").css("position", "static");
+
 
 });
-// Kartice
 
+// Kartice
 $("#prvi").on("click", function () {
- 
-    $(".prvi").toggle( "slow");
-    $(".drugi").hide();
-    $(".treci").hide();
-    $(".fixed-top").css("position","static");
-   
-   
+
+	$(".prvi").toggle("slow");
+	$(".drugi").hide();
+	$(".treci").hide();
+	$(".fixed-top").css("position", "static");
+
 
 });
 $("#drugi ").on("click", function () {
- 
-  $(".drugi").toggle( "slow");
-  $(".prvi").hide();
-  $(".treci").hide();
-  $(".fixed-top").css("position","static");
- 
+
+	$(".drugi").toggle("slow");
+	$(".prvi").hide();
+	$(".treci").hide();
+	$(".fixed-top").css("position", "static");
+
 
 });
 $("#treci ").on("click", function () {
- 
-  $(".treci").toggle( "slow");
-  $(".prvi").hide();
-  $(".drugi").hide();
-  $(".fixed-top").css("position","static");
- 
+
+	$(".treci").toggle("slow");
+	$(".prvi").hide();
+	$(".drugi").hide();
+	$(".fixed-top").css("position", "static");
+
 
 });
 
 
 // Forma Validacija
 $("#posalji ").on("click", function () {
- 
-  const FormaValidna = ZakazivanjePregleda.checkValidity();
-  if ( FormaValidna ) {
 
-        $('.alert').show();
-        setTimeout(function(){
-          ZakazivanjePregleda.submit();
+	const FormaValidna = ZakazivanjePregleda.checkValidity();
+	if (FormaValidna) {
 
-        },2000)
-        
-  } 
-  else{
-    alert('Ispravno popunite sva polja!')
-  }
- 
-  });
+		$('.alert').show();
+		setTimeout(function () {
+			ZakazivanjePregleda.submit();
+
+		}, 2000)
+
+	} else {
+		alert('Ispravno popunite sva polja!')
+	}
+
+});
 
 // ScrollToTop
-  var btn = $('#button');
+var btn = $('#button');
+$(window).scroll(function () {
+	if ($(window).scrollTop() > 300) {
+		btn.addClass('show');
+	} else {
+		btn.removeClass('show');
+	}
+});
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-      } else {
-        btn.removeClass('show');
-      }
-    });
-    
-    btn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
-    });
-
-
-  
-
-
-
-
-
+btn.on('click', function (e) {
+	e.preventDefault();
+	$('html, body').animate({
+		scrollTop: 0
+	}, '300');
+});
