@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 body {
@@ -217,7 +218,7 @@ button#treci:hover {
 
 .social_icon {
 	position: absolute;
-	top: -30px;
+	top: -5px;
 }
 
 .input-group-prepend span {
@@ -335,7 +336,7 @@ text-decoration: none;
 .alert.alert-success,.alert.alert-warning{
 	display: none;
 }
-.card-body.kard{
+.kard{
 	border: 1px solid #245497;
 margin: 5px;
 }    

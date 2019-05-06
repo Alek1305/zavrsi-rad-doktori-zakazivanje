@@ -48,7 +48,10 @@ function postaviTrenutnogAdmina () {
     var trenutniA = document.getElementById("trenutniAdmin");
     trenutniA.innerHTML = trenutniAdmin;
     if(trenutniAdmin){
-         document.querySelector('#prijaviSe a').innerHTML='';
+      var elem = document.querySelector('#prijaviSe a');
+       elem.style.display = 'none';
+
+       
     }
   
     
@@ -80,12 +83,4 @@ btn.on('click', function(e) {
 });
 
 
-$("#dropdown-itemOne").on("click", function () {
-    
-  $(".prvi").show();
-$(".drugi").hide();
-$(".treci").hide();
-$(".fixed-top").css("position","static");
- 
 
-});
