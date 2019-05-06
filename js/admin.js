@@ -51,7 +51,6 @@ function logOut() {
 }
 
 
-// ScrollToTop
 var btn = $('#button');
 $(window).scroll(function () {
 	if ($(window).scrollTop() > 300) {
