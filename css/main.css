@@ -30,28 +30,14 @@ h3 {
 	cursor: pointer;
 }
 
-div.col-sm-12.col-md-6.col-lg-6 {
-	margin-top: 20px;
-}
 
-ul.informacije {
-	list-style: none;
-	margin: 10px 0 0 10px;
-}
 
-footer.container-fluid {
-	background-color: #d9dce0;
-	padding: 0;
-}
 
-form.vesti {
-	margin: 10px 0 0 10px;
-}
 
-ul.informacije li a {
-	text-decoration: none;
-	padding: 5px;
-}
+
+
+
+
 
 #logo2 {
 	margin: 10px 0 0 10px;
@@ -61,9 +47,7 @@ img#logo2.img-fluid {
 	width: 300px;
 }
 
-div.col-sm-12.col-md-4.col-lg-4 {
-	padding-right: 0;
-}
+
 
 .masthead {
 	height: 100vh;
@@ -218,7 +202,7 @@ button#treci:hover {
 
 .social_icon {
 	position: absolute;
-	top: -5px;
+	top: -30px;
 }
 
 .input-group-prepend span {
@@ -333,8 +317,9 @@ text-decoration: none;
 	font-size: 40px;
 	transition: 3s;
 }
-.alert.alert-success,.alert.alert-warning{
+.alert.alert-success{
 	display: none;
+	margin: 10px;
 }
 .kard{
 	border: 1px solid #245497;
@@ -356,4 +341,8 @@ margin: 5px;
 }
 .card-deck{
 	margin-bottom: 20px;
+}
+.zak {
+   
+    cursor: pointer;
 }

@@ -80,6 +80,9 @@ $("#posalji ").on("click", function () {
         },2000)
         
   } 
+  else{
+    alert('Ispravno popunite sva polja!')
+  }
  
   });
 
