@@ -343,3 +343,6 @@ i.fas.fa-chevron-up {
 	cursor: pointer;
 	
 }
+#email:invalid {
+	border-color: red;
+  }

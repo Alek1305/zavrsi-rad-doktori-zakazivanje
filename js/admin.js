@@ -11,7 +11,7 @@ const admini = {
 		}
 	]
 }
-
+// 
 function logIn() {
 	var userName = document.getElementById('username').value;
 	var password = document.getElementById('password').value;
@@ -21,7 +21,6 @@ function logIn() {
 
 			alert("Ulogovali ste se");
 			localStorage.setItem("trenutniAdmin", admin.fullName);
-			localStorage.setItem("trenutnaLozinka", admin.password);
 
 			return 0;
 
@@ -47,7 +46,6 @@ function postaviTrenutnogAdmina() {
 
 function logOut() {
 	localStorage.setItem("trenutniAdmin", "", 1);
-	localStorage.setItem("trenutnaLozinka", "", 1);
 }
 
 

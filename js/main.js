@@ -61,7 +61,8 @@ $("#treci ").on("click", function () {
 $("#posalji ").on("click", function () {
 
 	const FormaValidna = ZakazivanjePregleda.checkValidity();
-	if (FormaValidna) {
+	const Email = email.checkValidity();
+	if (FormaValidna && email) {
 
 		$('.alert').show();
 		setTimeout(function () {
